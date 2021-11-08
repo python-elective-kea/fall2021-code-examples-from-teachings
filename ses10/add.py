@@ -1,7 +1,6 @@
 # timer.py
 import time
 
-"""
 # decorator
 def timer(func):
     def wrapper(*args, **kwargs):
@@ -11,20 +10,20 @@ def timer(func):
         print(f'Time elapsed: {end}')
 
     return wrapper 
-"""
 
-# function
-#@timer
+
+@timer
 def add(x):
     l = []
     for i in range(x):
         l.append(i)
     return l
 
-"""
+
+
+
 # Generator function
 @timer
 def gen_add(x):
     for i in range(x):
         yield i
-"""
